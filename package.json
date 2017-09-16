@@ -1,0 +1,26 @@
+{
+    "name": "language-cython",
+    "displayName": "Language-Cython",
+    "description": "Syntax highlighter for Cython",
+    "version": "0.0.1",
+    "publisher": "guyskk",
+    "engines": {
+        "vscode": "^1.16.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "cython",
+            "aliases": ["Cython", "cython"],
+            "extensions": [".pyx", ".pyi", ".pyd"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "cython",
+            "scopeName": "source.cython",
+            "path": "./syntaxes/Cython.tmLanguage"
+        }]
+    }
+}
