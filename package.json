@@ -5,7 +5,7 @@
     "version": "0.0.1",
     "publisher": "guyskk",
     "engines": {
-        "vscode": "^1.16.0"
+        "vscode": "^1.15.0"
     },
     "categories": [
         "Languages"
