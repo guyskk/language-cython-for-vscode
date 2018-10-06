@@ -399,7 +399,7 @@
             <key>name</key>
             <string>storage.type.function.cython</string>
             <key>match</key>
-            <string>\b((async\s+)?\s*(c)?def)\b</string>
+            <string>\b((async\s+)?\s*(c)?(p)?def)\b</string>
           </dict>
           <dict>
             <key>name</key>
@@ -407,9 +407,9 @@
             <key>match</key>
             <string>(?x)
   \b(?&lt;!\.)(
-    as | async | continue | del | assert | break | finally | for
+    as | async | continue | del | assert | break | cdef | cpdef | finally | for
     | from | elif | else | if | except | pass | raise
-    | return | try | while | with
+    | return | try | while | with | is | in | not | and | or
   )\b
 </string>
           </dict>
@@ -1921,7 +1921,7 @@
         <key>begin</key>
         <string>(?x)
   \s*
-  (?:\b(async) \s+)? \b((c)?def)\s+
+  (?:\b(async) \s+)? \b((c)?(p)?def)\s+
     (?=
       [[:alpha:]_][[:word:]]* \s* \(
     )
@@ -2806,7 +2806,7 @@ indirectly through syntactic constructs
         <key>match</key>
         <string>(?x)
   \b(
-    and | as | assert | async | await | break | cdef | class | continue | def
+    and | as | assert | async | await | break | cdef | cpdef | class | continue | def
     | del | elif | else | except | exec | finally | for | from | global
     | if | cimport | import | in | is | (?&lt;=\.)lambda | lambda(?=\s*[\.=])
     | nonlocal | not | or | pass | raise | return | try | while | with
