@@ -3,7 +3,8 @@
     "displayName": "Language-Cython",
     "description": "Syntax highlighter for Cython",
     "homepage": "https://github.com/guyskk/language-cython-for-vscode",
-    "version": "0.0.4",
+    "repository": "https://github.com/guyskk/language-cython-for-vscode",
+    "version": "0.0.5",
     "publisher": "guyskk",
     "license" : "MIT",
     "engines": {
