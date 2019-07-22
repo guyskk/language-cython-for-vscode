@@ -23,7 +23,7 @@
                 ],
                 "extensions": [
                     ".pyx",
-                    ".pyi",
+                    ".pxi",
                     ".pxd"
                 ],
                 "configuration": "./language-configuration.json"
