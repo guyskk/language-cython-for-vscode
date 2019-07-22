@@ -4,9 +4,9 @@
     "description": "Syntax highlighter for Cython",
     "homepage": "https://github.com/guyskk/language-cython-for-vscode",
     "repository": "https://github.com/guyskk/language-cython-for-vscode",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "publisher": "guyskk",
-    "license" : "MIT",
+    "license": "MIT",
     "engines": {
         "vscode": "^1.15.0"
     },
