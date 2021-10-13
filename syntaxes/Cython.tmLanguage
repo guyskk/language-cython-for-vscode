@@ -407,7 +407,7 @@
             <key>match</key>
             <string>(?x)
   \b(?&lt;!\.)(
-    as | async | continue | del | assert | break | cdef | cpdef | finally | for
+    as | async | continue | del | assert | break | cdef | cpdef | ctypedef | finally | for
     | from | elif | else | if | except | pass | raise
     | return | try | while | with | is | in | not | and | or
   )\b
@@ -2806,11 +2806,13 @@ indirectly through syntactic constructs
         <key>match</key>
         <string>(?x)
   \b(
-    and | as | assert | async | await | break | cdef | cpdef | class | continue | def
+    and | as | assert | async | await | break | cdef | cpdef | ctypedef | class | continue | def
     | del | elif | else | except | exec | finally | for | from | global
     | if | cimport | import | in | is | (?&lt;=\.)lambda | lambda(?=\s*[\.=])
     | nonlocal | not | or | pass | raise | return | try | while | with
-    | yield
+    | yield | (?&lt;=ctypedef\s+)fused | (?&lt;=cp?def\s+)struct | (?&lt;=^\s+)struct(?=.*:)
+    | (?&lt;=cp?def\s+)enum | (?&lt;=^\s+)enum(?=.*:) | (?&lt;=cp?def\s+)union | (?&lt;=^\s+)union(?=.*:)
+    | (?&lt;=cdef\s+)extern | (?&lt;=cdef\s+)api | (?&lt;=cdef\s+public\s+)api | (?&lt;=cdef\s+)public
   )\b
 </string>
       </dict>

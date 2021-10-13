@@ -26,5 +26,11 @@
         ["(", ")"],
         ["\"", "\""],
         ["'", "'"]
-    ]
+    ],
+    "onEnterRules": [
+        {
+          "beforeText": "^\\s*(?:def|class|for|if|elif|else|while|try|with|finally|except|async|cdef|cpdef|ctypedef|struct|union|enum|IF|ELIF|ELSE).*?:\\s*$",
+          "action": { "indent": "indent" }
+        }
+      ]
 }
