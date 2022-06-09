@@ -2,7 +2,7 @@
 
 Homepage: https://github.com/guyskk/language-cython-for-vscode 
 
-**The Grammar was copyed from [MagicPython](https://github.com/MagicStack/MagicPython), with a little improvement.**
+**The grammar was copied from [MagicPython](https://github.com/MagicStack/MagicPython), with a little improvement.**
 
 ## Features
 
@@ -10,7 +10,7 @@ Homepage: https://github.com/guyskk/language-cython-for-vscode
 
 ## Development
 
-- https://code.visualstudio.com/docs/extensions/developing-extensions#_launching-your-extension
+- https://code.visualstudio.com/api/working-with-extensions/testing-extension
 - https://code.visualstudio.com/docs/extensions/publish-extension
 
 ## Publish Steps
@@ -18,7 +18,7 @@ Homepage: https://github.com/guyskk/language-cython-for-vscode
 1. Bump version in `package.json`
 2. Update `CHANGELOG.md`
 3. Execute `vsce package` to build package
-4. Login [marketplace](https://marketplace.visualstudio.com/vscode) and upload extension package
+4. Log into [marketplace](https://marketplace.visualstudio.com/vscode) and upload the extension package
 
 ![publish-extension](https://raw.githubusercontent.com/guyskk/language-cython-for-vscode/master/images/publish-extension.png)
 
