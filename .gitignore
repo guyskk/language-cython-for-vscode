@@ -1,2 +1,3 @@
 *.vsix
 .vscode
+.DS_Store
