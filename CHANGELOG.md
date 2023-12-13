@@ -4,6 +4,9 @@ All notable changes to the "cython" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.0.8] - 2021-12-13
+- add MIT License, update README, publish to open-vsx.org.
+
 ## [0.0.7] - 2021-10-21
 - add auto-intention and some cython highlighting. #10
 
