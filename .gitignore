@@ -1,3 +1,4 @@
 *.vsix
 .vscode
 .DS_Store
+tmp/
